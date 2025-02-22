@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSITY WEBSITE DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+ <section class="sub-header">
+    <nav>
+     <a href="index.html"><img src="eduford_img/logo.png" alt="Eduford Logo"></a>  
+     <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="index.html">HOME</a></li>
+            <li> <a href="about.html">ABOUT</a></li>
+            <li> <a href="course.html">COURSE</a></li>
+            <li> <a href="blog.html">BLOG</a></li>
+            <li> <a href="contact.html">CONTACT</a></li>
+        </ul>
+     </div>
+     <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+ </section> 
+
+<!-- About us content -->
+ <section class="about-us">
+    <div class="row">
+        <div class="about-col">
+<h1>We Are The World's Largest University</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cumque nulla facere. Ab, blanditiis commodi. Facere nam accusamus sunt temporibus, dolor possimus ipsum libero. Corporis mollitia eum tenetur ducimus deleniti.</p>
+<a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+
+        </div>
+        <div class="about-col">
+            <img src="eduford_img/about.jpg">
+        </div>
+    </div>
+ </section>
+
+
+ 
+
+<!-- footer -->
+
+<section class="footer">
+    <h4>About US</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempore ab officia rerum. Laudantium perferendis <br> beatae id esse sequi ad fugiat tempore quam voluptas dolore, adipisci nihil temporibus est dolor.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> Easy Tutorials</p>
+</section>
+
+<!-- JavaScript for toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script> 
+</body>
+</html>
