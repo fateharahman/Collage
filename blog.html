@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSITY WEBSITE DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+ <section class="sub-header">
+    <nav>
+     <a href="index.html"><img src="eduford_img/logo.png" alt="Eduford Logo"></a>  
+     <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="index.html">HOME</a></li>
+            <li> <a href="about.html">ABOUT</a></li>
+            <li> <a href="course.html">COURSE</a></li>
+            <li> <a href="blog.html">BLOG</a></li>
+            <li> <a href="contact.html">CONTACT</a></li>
+        </ul>
+     </div>
+     <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Certificate & Online Programs For 2025</h1>
+ </section> 
+
+ <!-- blog page content -->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="eduford_img/certificate.jpg" alt="">
+            <h2>Our Certificate & Online Programs For 2025</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptate saepe consectetur atque autem commodi eos fuga ducimus sapiente sit. Modi voluptatum voluptas ut. Officia ex consectetur corporis repellendus sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio unde id exercitationem deserunt rerum libero aut rem maiores tempore! Delectus illo culpa laborum officiis incidunt quam officia, corporis minima velit!</p>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure magnam adipisci sunt amet nam. Illo, assumenda deleniti obcaecati explicabo asperiores, tempora adipisci ut corporis in eius sapiente aspernatur nihil facilis Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate facere qui vel dolore nihil molestias ut? Incidunt, sapiente voluptatibus praesentium nobis, illum fugiat ut excepturi deserunt, numquam maxime dolor expedita.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo at tempore veniam odit enim fugit reiciendis facilis temporibus quam totam, natus laudantium illum dignissimos maiores asperiores facere fugiat debitis eaque Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam veniam, eos hic molestiae fuga dignissimos officia incidunt adipisci itaque accusamus repudiandae quae laudantium magni similique, aspernatur ab facilis, non at?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi dolorum iste, atque porro voluptatum enim delectus harum ducimus mollitia recusandae unde voluptatibus? Ratione, doloremque. Voluptas asperiores quos distinctio ab Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officia quaerat, nihil placeat ipsam fugiat, in laudantium consequuntur neque expedita voluptates magnam eaque, error iste rerum inventore dolorem excepturi porro</p>
+             
+            <div class="comment-box">
+
+                <h3>Leave a comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="email" placeholder="Enter Your Email">
+                    <textarea rows="5" placeholder="Your comment">
+                    </textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+            </div>
+            </div>
+
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div class="post-category">
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div class="post-category">
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div class="post-category">
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div class="post-category">
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div class="post-category">
+                    <span>AutoCAD</span>
+                    <span>45</span>
+                </div>
+                <div class="post-category">
+                    <span>Journalism</span>
+                    <span>30</span>
+                </div>
+                <div class="post-category">
+                    <span>Commerce</span>
+                    <span>22</span>
+                </div>
+            </div>
+            </div>
+
+</section>
+
+  
+
+  
+<!-- footer -->
+
+<section class="footer">
+    <h4>About US</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempore ab officia rerum. Laudantium perferendis <br> beatae id esse sequi ad fugiat tempore quam voluptas dolore, adipisci nihil temporibus est dolor.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> Easy Tutorials</p>
+</section>
+
+<!-- JavaScript for toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script> 
+</body>
+</html>
