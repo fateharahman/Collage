@@ -91,18 +91,38 @@ nav .fa{
     .text-box p{
         font-size: 16px;
     }
-    .nav-links{
-        position:fixed;
-        background: #f44336;
-        height:100vh ;
-       width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        display: none;
-        transition:1s ;
+    
     }
+    .nav-links {
+        position: fixed;
+        background: white;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px; /* Initially hidden */
+        text-align: left;
+        transition: right 0.5s ease-in-out;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .nav-links ul {
+        list-style: none;
+        padding: 30px;
+    }
+    .nav-links i {
+        font-size: 22px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: black;
+    }
+    .fa-bars, .fa-times {
+        font-size: 28px;
+        cursor: pointer;
+        display: block;
+        color: white;
+    }
+    
     nav.fa{
         display: block;
         color: #fff;
@@ -114,7 +134,7 @@ nav .fa{
     .nav-links ul{
     padding: 30px;
     }
-}
+
 /* course */
 .course{
     width: 80%;
