@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
- <section class="sub-header">
+ <section class="header">
     <nav>
-     <a href="index.html"><img src="eduford_img/logo.png" alt="Eduford Logo"></a>  
-     <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hideMenu()"></i>
-        <ul>
-            <li> <a href="index.html">HOME</a></li>
-            <li> <a href="about.html">ABOUT</a></li>
-            <li> <a href="course.html">COURSE</a></li>
-            <li> <a href="blog.html">BLOG</a></li>
-            <li> <a href="contact.html">CONTACT</a></li>
-        </ul>
-     </div>
-     <i class="fa fa-bars" onclick="showMenu()"></i>
+        <a href="index.html"><img src="eduford_img/logo.png" alt="Eduford Logo"></a>  
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" id="closeMenu"></i>  <!-- Close Button -->
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" id="openMenu"></i>  <!-- Open Button -->
     </nav>
     <h1>Our Courses</h1>
  </section> 
@@ -92,12 +92,16 @@
 <!-- JavaScript for toggle menu -->
 <script>
     var navLinks = document.getElementById("navLinks");
-    function showMenu(){
+    var openMenu = document.getElementById("openMenu");
+    var closeMenu = document.getElementById("closeMenu");
+
+    openMenu.addEventListener("click", function () {
         navLinks.style.right = "0";
-    }
-    function hideMenu(){
+    });
+
+    closeMenu.addEventListener("click", function () {
         navLinks.style.right = "-200px";
-    }
-</script> 
+    });
+</script>  
 </body>
 </html>

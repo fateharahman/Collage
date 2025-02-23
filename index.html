@@ -30,6 +30,7 @@
         <a href="visit.html" class="hero-btn">VISIT US TO KNOW MORE</a>
     </div>
  </section> 
+
  <!-- Course -->
   <section class="course">
     <h1>Courses We Offer</h1>
@@ -158,12 +159,17 @@
 <!-- JavaScript for toggle menu -->
 <script>
     var navLinks = document.getElementById("navLinks");
-    function showMenu(){
+    var openMenu = document.getElementById("openMenu");
+    var closeMenu = document.getElementById("closeMenu");
+
+    openMenu.addEventListener("click", function () {
         navLinks.style.right = "0";
-    }
-    function hideMenu(){
+    });
+
+    closeMenu.addEventListener("click", function () {
         navLinks.style.right = "-200px";
-    }
-</script> 
+    });
+</script>  
+
 </body>
 </html>
